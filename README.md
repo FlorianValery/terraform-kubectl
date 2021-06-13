@@ -31,7 +31,7 @@ terraform plan:
     - echo $KUBE_CONFIG > /root/.kube/config
     - terraform init && terraform plan
   tags:
-    - - latest
+    - latest
 ```
 
 ## Drone job example
@@ -39,17 +39,17 @@ terraform plan:
 - name: terraform plan
   image: floval/terraform-kubectl:latest
   commands:
-      - echo $KUBE_CONFIG > /root/.kube/config
-      - terraform init && terraform plan
+    - echo $KUBE_CONFIG > /root/.kube/config
+    - terraform init && terraform plan
   environment:
-      KUBE_CONFIG:
-          from_secret: KUBE_CONFIG
-      AWS_ACCESS_KEY:
-          from_secret: AWS_ACCESS_KEY
-      AWS_SECRET_ACCESS_KEY:
-          from_secret: AWS_SECRET_ACCESS_KEY
+    KUBE_CONFIG:
+        from_secret: KUBE_CONFIG
+    AWS_ACCESS_KEY:
+        from_secret: AWS_ACCESS_KEY
+    AWS_SECRET_ACCESS_KEY:
+        from_secret: AWS_SECRET_ACCESS_KEY
   tags:
-      - latest
+    - latest
 ```
 # Supported tags and respective `Dockerfile` links
 
