@@ -1,5 +1,6 @@
 # Terraform & Kubectl
-Terraform and kubectl inside Docker to integrate within your Kubernetes CI/CD pipeline. 
+Terraform and kubectl inside Docker to integrate within your Kubernetes CI/CD pipeline.  
+The AWS CLI is also included for remote S3 backend.
 
 ![Image Size](https://img.shields.io/docker/pulls/floval/terraform-kubectl "Image Size") ![Image Size](https://img.shields.io/docker/image-size/floval/terraform-kubectl/latest "Image Size")
 

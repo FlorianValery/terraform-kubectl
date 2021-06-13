@@ -30,4 +30,9 @@ RUN curl -LO https://storage.googleapis.com/kubernetes-release/release/v${KUBE_V
 RUN chmod +x ./kubectl
 RUN mv kubectl /usr/bin/kubectl
 
+# Install AWS cli 
+RUN apk add --no-cache python3 py3-pip \
+    && pip3 install --upgrade awscli \
+    && rm -rf /var/cache/apk/*
+
 CMD terraform -v && kubectl version
