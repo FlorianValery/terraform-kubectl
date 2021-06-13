@@ -12,7 +12,7 @@ docker pull floval/terraform-kubectl:[TAG]
 ```
 ## Loading your Kube config
 ```
-docker run --rm --name terraform-kubectl -v /path/to/kube/config/file:/.kube/config floval/terraform-kubectl:latest
+docker run --rm --name terraform-kubectl -v /path/to/kube/config/file:/root/.kube/config floval/terraform-kubectl:latest
 ```
 # Supported tags and respective `Dockerfile` links
 
