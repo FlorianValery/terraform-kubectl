@@ -17,6 +17,40 @@ docker pull floval/terraform-kubectl:[TAG]
 ```
 docker run --rm --name terraform-kubectl -v /path/to/kube/config/file:/root/.kube/config floval/terraform-kubectl:latest
 ```
+
+## Loading your AWS credentials
+```
+docker run --rm --name terraform-kubectl-e AWS_ACCESS_KEY={your_aws_key} -e AWS_SECRET_ACCESS_KEY={your_aws_secret_key}
+```
+## Gitlab job example
+```
+terraform plan:
+  stage: plan
+  image: floval/terraform-kubectl:latest
+  script:
+    - echo $KUBE_CONFIG > /root/.kube/config
+    - terraform init && terraform plan
+  tags:
+    - - latest
+```
+
+## Drone job example
+```
+- name: terraform plan
+  image: floval/terraform-kubectl:latest
+  commands:
+      - echo $KUBE_CONFIG > /root/.kube/config
+      - terraform init && terraform plan
+  environment:
+      KUBE_CONFIG:
+          from_secret: KUBE_CONFIG
+      AWS_ACCESS_KEY:
+          from_secret: AWS_ACCESS_KEY
+      AWS_SECRET_ACCESS_KEY:
+          from_secret: AWS_SECRET_ACCESS_KEY
+  tags:
+      - latest
+```
 # Supported tags and respective `Dockerfile` links
 
 Only Terraform v0.13 and kubectl 1.19 onward are supported.
