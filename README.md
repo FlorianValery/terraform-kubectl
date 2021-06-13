@@ -1,6 +1,8 @@
 # Terraform & Kubectl
 Terraform and kubectl inside Docker to integrate within your Kubernetes CI/CD pipeline. 
 
+![Image Size](https://img.shields.io/docker/pulls/floval/terraform-kubectl "Image Size") ![Image Size](https://img.shields.io/docker/image-size/floval/terraform-kubectl/latest "Image Size")
+
 # Usage
 ## Get the image
 ```
