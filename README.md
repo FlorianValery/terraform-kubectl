@@ -23,6 +23,7 @@ docker run --rm --name terraform-kubectl -v /path/to/kube/config/file:/root/.kub
 docker run --rm --name terraform-kubectl-e AWS_ACCESS_KEY={your_aws_key} -e AWS_SECRET_ACCESS_KEY={your_aws_secret_key}
 ```
 ## Gitlab job example
+To avoid mounting a host file, you can grab your Kubernetes and AWS config as CI/CD variables.
 ```
 terraform plan:
   stage: plan
@@ -35,6 +36,7 @@ terraform plan:
 ```
 
 ## Drone job example
+To avoid mounting a host file, you can grab your Kubernetes and AWS config as CI/CD variables.
 ```
 - name: terraform plan
   image: floval/terraform-kubectl:latest
