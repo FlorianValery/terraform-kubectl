@@ -36,7 +36,7 @@ terraform plan:
 ```
 
 ## Drone job example
-To avoid mounting a host file, you can grab your Kubernetes and AWS config as CI/CD variables.
+To avoid mounting a host file, you can grab your Kubernetes and AWS config as Drone Secrets.
 ```
 - name: terraform plan
   image: floval/terraform-kubectl:latest

@@ -7,12 +7,6 @@ before_script:
   - docker login --username $DOCKER_USER --password $DOCKER_PASSWORD
   - apk update && apk add bash
 
-stages:
-  - build-0.13
-  - build-0.14
-  - build-0.15
-  - build-1.0
-
 build-0.13:
   stage:  build-0.13
   script:
