@@ -1,3 +1,6 @@
+# 1.2 (June 15, 2021)
+Updated README, added automated build in gitlab.
+
 # 1.1 (June 13, 2021)
 Added the AWS CLI package to add S3 remote backend support.
 
