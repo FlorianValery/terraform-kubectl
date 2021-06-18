@@ -1,3 +1,7 @@
+# 1.3 (June 18, 2021)
+Updated Kubectl to minor version 1.21.2, 1.20.8 and 1.19.12
+
+
 # 1.2 (June 15, 2021)
 Updated README, added automated build in gitlab.
 
