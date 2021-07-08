@@ -1,3 +1,6 @@
+# 1.5 (July 8, 2021)
+Added support for Terraform 1.0.2
+
 # 1.4 (June 25, 2021)
 Added support for Terraform 1.0.1
 
