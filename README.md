@@ -20,7 +20,7 @@ docker run --rm --name terraform-kubectl -v /path/to/kube/config/file:/root/.kub
 
 ## Loading your AWS credentials
 ```
-docker run --rm --name terraform-kubectl-e AWS_ACCESS_KEY={your_aws_key} -e AWS_SECRET_ACCESS_KEY={your_aws_secret_key}
+docker run --rm --name terraform-kubectl -e AWS_ACCESS_KEY={your_aws_key} -e AWS_SECRET_ACCESS_KEY={your_aws_secret_key} floval/terraform-kubectl:latest
 ```
 ## Gitlab job example
 To avoid mounting a host file, you can grab your Kubernetes and AWS config as CI/CD variables.
