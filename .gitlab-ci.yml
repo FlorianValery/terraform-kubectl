@@ -30,7 +30,7 @@ build-0.15:
   stage:  build
   script:
     - cd terraform0.15
-    - bash ../build_script/docker.sh.
+    - bash ../build_script/docker.sh
   only:
     - tags
 
