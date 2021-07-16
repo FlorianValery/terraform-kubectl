@@ -3,7 +3,7 @@ FROM alpine:latest
 
 # Define packages versions
 ENV TERRAFORM_VERSION="0.14.9"
-ENV KUBE_VERSION="1.21.2"
+ENV KUBE_VERSION="1.21.3"
 
 # Labels
 LABEL maintainer="florian.valery@outlook.com" \
