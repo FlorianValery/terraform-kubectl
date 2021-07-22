@@ -58,7 +58,10 @@ To avoid mounting a host file, you can grab your Kubernetes and AWS config as Dr
 Only Terraform v0.13 and kubectl 1.19 onward are supported.
 
 ## Terraform 1.0
-* `latest`, `1.0.2-kubectl-1.21` [Dockerfile](https://github.com/FlorianValery/terraform-kubectl/blob/master/terraform1.0/terraform1.0.2/kubectl1.21)
+* `latest`, `1.0.3-kubectl-1.21` [Dockerfile](https://github.com/FlorianValery/terraform-kubectl/blob/master/terraform1.0/terraform1.0.3/kubectl1.21)
+* `1.0.3-kubectl-1.20` [Dockerfile](https://github.com/FlorianValery/terraform-kubectl/blob/master/terraform1.0/terraform1.0.3/kubectl1.20)
+* `1.0.3-kubectl-1.19` [Dockerfile](https://github.com/FlorianValery/terraform-kubectl/blob/master/terraform1.0/terraform1.0.3/kubectl1.19)
+* `1.0.2-kubectl-1.21` [Dockerfile](https://github.com/FlorianValery/terraform-kubectl/blob/master/terraform1.0/terraform1.0.2/kubectl1.21)
 * `1.0.2-kubectl-1.20` [Dockerfile](https://github.com/FlorianValery/terraform-kubectl/blob/master/terraform1.0/terraform1.0.2/kubectl1.20)
 * `1.0.2-kubectl-1.19` [Dockerfile](https://github.com/FlorianValery/terraform-kubectl/blob/master/terraform1.0/terraform1.0.2/kubectl1.19)
 * `1.0.1-kubectl-1.21` [Dockerfile](https://github.com/FlorianValery/terraform-kubectl/blob/master/terraform1.0/terraform1.0.1/kubectl1.21)
