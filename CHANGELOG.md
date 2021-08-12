@@ -1,3 +1,7 @@
+# 1.8 (Aug 12, 2021)
+Added support for Terraform 1.0.4
+Updated Kubectl to minor version 1.21.4, 1.20.10 and 1.19.14
+
 # 1.7 (July 22, 2021)
 Added support for Terraform 1.0.3
 
