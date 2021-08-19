@@ -1,5 +1,8 @@
-# 1.9 (Aug 19, 2021)
+# 2.0 (Aug 19, 2021)
 Added support for terraform 1.0.5
+
+BUGFIX:
+* Removed verbose output for docker builds. Output was too long for gitlab builds.
 
 # 1.8 (Aug 12, 2021)
 Added support for Terraform 1.0.4
